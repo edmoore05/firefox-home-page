@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: transparent; /* works with your transparent setup */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      padding-top: 50px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      max-width: 800px;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+      width: 100%;
+    }
+
+    .section a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 6px 0;
+      transition: color 0.2s;
+    }
+
+    .section a:hover {
+      color: #00cfff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>School</h2>
+      <a href="https://canvas.instructure.com/">Canvas</a>
+      <a href="https://mail.google.com/">School Email</a>
+      <a href="https://scholar.google.com/">Google Scholar</a>
+    </div>
+    <div class="section">
+      <h2>Personal</h2>
+      <a href="https://youtube.com/">YouTube</a>
+      <a href="https://reddit.com/">Reddit</a>
+      <a href="https://github.com/">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
