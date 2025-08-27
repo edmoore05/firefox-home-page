@@ -9,13 +9,11 @@ body {
       height: 100vh;
       /*pushes content down */
       padding-top: 60px; 
-      line-height: 1.75;
     }
 
     .logo {
       width: 175px;
       height: 175px;
-
       background-image: url("images/firefox_logo.ico");
       background-size: contain;
       background-repeat: no-repeat;
@@ -28,12 +26,16 @@ body {
 
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* two columns */
       gap: 100px;
       max-width: 800px;
+      margin: 0 auto;
     }
 
     .section {
+      display: flex;
+      flex-direction: column; /* stack links vertically */
+      align-items: center;
       text-align: center;
     }
 
@@ -50,15 +52,17 @@ body {
     font-size: 18px;
     transition: color 0.3s ease;
     background-repeat: no-repeat;
-     background-position: left center;
-     background-size: 20px 20px; /* consistent size */
-     padding-left: 28px; /* spacing for icon */
+    background-position: left center;
+    background-size: 20px 20px; /* consistent size */
+    padding-left: 28px; /* spacing for icon */
+    margin-bottom: 18px;
     }
 
     .section a:hover {
       color: #ff9400; /*Firefox orange */
       text-decoration: underline;
     }
+
     /* Individual icons */
     a.D2L { background-image: url('images/D2L_icon.png'); }
     a.my-westminster { background-image: url('images/westminster_icon.png'); }
@@ -67,8 +71,7 @@ body {
     a.annas-archive { background-image: url('images/annas_archive_icon.png'); }
     a.cengage { background-image: url('images/cengage_icon.jpg'); }
     a.youtube { background-image: url('images/youtube_icon.png'); }
-    a.ytmusic { background-image: url('images/yt_music_icon.jpg'); }
+    a.yt-music { background-image: url('images/yt_music_icon.jpg'); }
     a.github { background-image: url('images/github_icon.svg'); }
     a.reddit { background-image: url('images/reddit_icon.svg'); }
-    a.frameworks { background-image: url('images/framework_icon.jpg'); }
-    
+    a.framework { background-image: url('images/framework_icon.jpg'); }
